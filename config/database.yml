@@ -9,11 +9,13 @@ default: &default
   pool: 5
   timeout: 5000
   username: ubuntu
+  password:
 
 development:
   <<: *default
   database: jason_development
   username: ubuntu
+  password:
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -26,3 +28,4 @@ production:
   <<: *default
   database: jason_production
   username: ubuntu
+  password:
