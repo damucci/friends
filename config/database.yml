@@ -8,12 +8,12 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
-  username: jason
+  username: ubuntu
 
 development:
   <<: *default
   database: jason_development
-  username: jason
+  username: ubuntu
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -25,4 +25,4 @@ test:
 production:
   <<: *default
   database: jason_production
-  username: jason
+  username: ubuntu
